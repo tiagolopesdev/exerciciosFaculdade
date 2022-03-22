@@ -42,8 +42,22 @@
 # newList = list(newList)
 # print(f"Agora sim, nova lista: {newList}")
 
-numbers = list(range(0,21))
+# numbers = list(range(0,21))
 
-numbersPar = list(filter(lambda x: x % 2 == 0, numbers))
-print(f"Números pares: {numbersPar}")
+# numbersPar = list(filter(lambda x: x % 2 == 0, numbers))
+# print(f"Números pares: {numbersPar}")
 
+#-------------
+# Utilizando NumPy
+
+import numpy as np
+
+matriz_1_1 = np.array([1,2,3])
+matriz_2_2 = np.array([[1,2],[3,4]])
+matriz_3_2 = np.array([[1,2],[3,4],[5,6]])
+matriz_2_3 = np.array([[1,2,3],[4,5,6]])
+print(type(matriz_1_1))
+print(f"\nMatriz_1_1: {matriz_1_1}")
+print(f"Matriz_2_2: {matriz_2_2}")
+print(f"\nMatriz_3_2: {matriz_3_2}")
+print(f"\nMatriz_2_3: {matriz_2_3}")
