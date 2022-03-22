@@ -34,12 +34,16 @@
 #-------------
 # Funções map() e filter()
 
-text = "Python Java Go Kotlin C C# PHP Lua Go".split()
+# text = "Python Java Go Kotlin C C# PHP Lua Go".split()
 
-newList = map(lambda x: x.upper(), text)
-print(f"Nova lista: {newList}")
+# newList = map(lambda x: x.upper(), text)
+# print(f"Nova lista: {newList}")
 
-newList = list(newList)
-print(f"Agora sim, nova lista: {newList}")
+# newList = list(newList)
+# print(f"Agora sim, nova lista: {newList}")
 
+numbers = list(range(0,21))
+
+numbersPar = list(filter(lambda x: x % 2 == 0, numbers))
+print(f"Números pares: {numbersPar}")
 
