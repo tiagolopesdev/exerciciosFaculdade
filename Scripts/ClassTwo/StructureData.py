@@ -25,11 +25,21 @@
 # for vogal in vogais:
 #     print(f"Posição: {vogais.index(vogal)}, valor: {vogal}")
 
+# text = "Python Java Go Kotlin C C# PHP Lua Go".split()
+
+# print(f"Antes da listcomp: {text}")
+# text = [item.lower() for item in text] # upper(): elementos em caixa alta, lower(): elementos em caixa baixa
+# print(f"Depois da listcomp: {text}")
+
+#-------------
+# Funções map() e filter()
+
 text = "Python Java Go Kotlin C C# PHP Lua Go".split()
 
-print(f"Antes da listcomp: {text}")
-text = [item.lower() for item in text] # upper(): elementos em caixa alta, lower(): elementos em caixa baixa
-print(f"Depois da listcomp: {text}")
+newList = map(lambda x: x.upper(), text)
+print(f"Nova lista: {newList}")
 
+newList = list(newList)
+print(f"Agora sim, nova lista: {newList}")
 
 
