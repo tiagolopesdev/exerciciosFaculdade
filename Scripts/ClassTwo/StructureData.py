@@ -80,6 +80,24 @@
 # print(sorted(lista))
 # searchLinear(lista, 13)
 
-name = 'tiago'
-resultado = name.index('a')
-print(resultado)
+# name = 'tiago'
+# resultado = name.index('a')
+# print(resultado)
+
+def executar_busca_binaria(lista, valor):
+    minimo = 0
+    maximo = len(lista) - 1
+    while minimo <= maximo:
+        meio = (minimo + maximo) // 2
+        if valor < lista[meio]:
+            maximo = meio - 1
+        elif valor > lista[meio]:
+            minimo = meio + 1
+        else:
+            return True
+    return False
+
+lista = list(range(1, 50))
+print(f"\n{lista}")
+print(f"\n{executar_busca_binaria(lista=lista, valor=10)}")
+print(f"\n{executar_busca_binaria(lista=lista, valor=20)}")
