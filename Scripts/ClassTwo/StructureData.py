@@ -68,13 +68,18 @@
 # names = "joão tiago ana carol juca bia eduardo geovana lucas".split()
 # print(f"Contem o nome joão:{'joão' not in names}")
 # print(f"Contem o nome carol:{'carol' not in names}")
-def searchLinear(lista, valor):
-    for elemento in lista:
-        if valor == elemento:
-            return 'True'
-    return 'False'
 
-import random
-lista = random.sample(range(100),5)
-print(sorted(lista))
-searchLinear(lista, 13)
+# def searchLinear(lista, valor):
+#     for elemento in lista:
+#         if valor == elemento:
+#             return True
+#     return False
+
+# import random
+# lista = random.sample(range(100),5)
+# print(sorted(lista))
+# searchLinear(lista, 13)
+
+name = 'tiago'
+resultado = name.index('a')
+print(resultado)
