@@ -20,10 +20,16 @@
 #-------------
 # Listas
 
-vogais = ['a', 'e', 'i', 'o', 'u']
+# vogais = ['a', 'e', 'i', 'o', 'u']
 
-for vogal in vogais:
-    print(f"Posição: {vogais.index(vogal)}, valor: {vogal}")
+# for vogal in vogais:
+#     print(f"Posição: {vogais.index(vogal)}, valor: {vogal}")
+
+text = "Python Java Go Kotlin C C# PHP Lua Go".split()
+
+print(f"Antes da listcomp: {text}")
+text = [item.lower() for item in text] # upper(): elementos em caixa alta, lower(): elementos em caixa baixa
+print(f"Depois da listcomp: {text}")
 
 
 
