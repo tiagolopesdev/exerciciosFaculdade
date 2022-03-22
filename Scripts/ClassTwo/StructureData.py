@@ -50,14 +50,22 @@
 #-------------
 # Utilizando NumPy
 
-import numpy as np
+# import numpy as np
 
-matriz_1_1 = np.array([1,2,3])
-matriz_2_2 = np.array([[1,2],[3,4]])
-matriz_3_2 = np.array([[1,2],[3,4],[5,6]])
-matriz_2_3 = np.array([[1,2,3],[4,5,6]])
-print(type(matriz_1_1))
-print(f"\nMatriz_1_1: {matriz_1_1}")
-print(f"Matriz_2_2: {matriz_2_2}")
-print(f"\nMatriz_3_2: {matriz_3_2}")
-print(f"\nMatriz_2_3: {matriz_2_3}")
+# matriz_1_1 = np.array([1,2,3])
+# matriz_2_2 = np.array([[1,2],[3,4]])
+# matriz_3_2 = np.array([[1,2],[3,4],[5,6]])
+# matriz_2_3 = np.array([[1,2,3],[4,5,6]])
+# print(type(matriz_1_1))
+# print(f"\nMatriz_1_1: {matriz_1_1}")
+# print(f"Matriz_2_2: {matriz_2_2}")
+# print(f"\nMatriz_3_2: {matriz_3_2}")
+# print(f"\nMatriz_2_3: {matriz_2_3}")
+
+#-------------
+# Algoritmos de busca
+
+names = "joão tiago ana carol juca bia eduardo geovana lucas".split()
+
+print(f"Contem o nome joão:{'joão' not in names}")
+print(f"Contem o nome carol:{'carol' not in names}")
