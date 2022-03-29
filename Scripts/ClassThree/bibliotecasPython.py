@@ -1,7 +1,7 @@
-import math
+import math as m
 
-print(math.sqrt(25))
-print(math.log2(1024))
-print(math.cos(45))
+print(m.sqrt(25))
+print(m.log2(1024))
+print(m.cos(45))
 
 
