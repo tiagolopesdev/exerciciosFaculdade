@@ -4,8 +4,6 @@ pd.Series(data=5)
 
 listNames = 'Tiago João Lucas Bia Ana'.split()
 
-print(pd.Series(listNames))
-
 # Cria uma serie com um dicionário
 dados = {
     'nome1': 'Howard',
@@ -23,6 +21,7 @@ cpfs = '''111.111.111-11
 
 print("\n")
 
-pd.Series(listNames, index=cpfs)
+seriesDados = pd.Series(listNames, index=cpfs)
+print(f"Pessoa localizada: {seriesDados.loc['111.111.111-11']}")
 
 
