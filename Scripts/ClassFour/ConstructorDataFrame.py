@@ -36,3 +36,9 @@ dadosDicionario = {
 }
 print("\nDados com dicionário\n")
 print(pd.DataFrame(dadosDicionario))
+
+# Seleção de colunas em um DataFrame
+
+print("\nSeleção de colunas com dados em dicionário\n")
+dfDadosDicionario = dadosDicionario['idades']
+print("Tipo de dado: ", type(dfDadosDicionario))
