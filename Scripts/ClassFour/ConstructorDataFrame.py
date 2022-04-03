@@ -14,3 +14,8 @@ listEmail = '''one@gmail.com two@gmail.com
 listIdade = [32, 22, 25, 29, 38]
 
 print(pd.DataFrame(listNames, columns=['nomes'], index=listCpfs))
+
+# Usando a função Zip() para Criar tuplas compostas por valores contidos nas listas
+
+dados = list(zip(listNames, listEmail, listCpfs, listIdade))
+print(pd.DataFrame(dados, columns=['Nomes', 'E-mails', 'CPF', 'Idade']))
