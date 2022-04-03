@@ -19,3 +19,20 @@ print(pd.DataFrame(listNames, columns=['nomes'], index=listCpfs))
 
 dados = list(zip(listNames, listEmail, listCpfs, listIdade))
 print(pd.DataFrame(dados, columns=['Nomes', 'E-mails', 'CPF', 'Idade']))
+
+# Construtor DataFrame com dicionário de dados
+
+dadosDicionario = {
+    'nomes' : 'Tiago João Lucas Bia Ana'.split(),
+    'emails' : '''one@gmail.com two@gmail.com 
+        three@gmail.com four@gmail.com 
+        five@gmail.com'''.split(),
+    'CPF' : '''111.111.111-11 
+        222.222.222-22 333.333.333-33 
+        444.444.444-44 555.555.555-55
+        '''.split(),
+    'idades' : [32, 22, 25, 29, 38]
+
+}
+print("\nDados com dicionário\n")
+print(pd.DataFrame(dadosDicionario))
