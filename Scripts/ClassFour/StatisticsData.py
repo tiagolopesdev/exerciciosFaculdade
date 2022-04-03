@@ -12,3 +12,5 @@ print('Qual o desvio padrão?', seriesDados.std())
 print('Existem valores nulos?', seriesDados.hasnans)
 print('Qual a mediana?', seriesDados.median())
 print('Quantos valores existem?', seriesDados.count())
+
+print("\nResumo:\n", seriesDados.describe())
