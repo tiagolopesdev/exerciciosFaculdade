@@ -13,4 +13,4 @@ listEmail = '''one@gmail.com two@gmail.com
 
 listIdade = [32, 22, 25, 29, 38]
 
-print(pd.DataFrame(listNames, columns=['nomes']))
+print(pd.DataFrame(listNames, columns=['nomes'], index=listCpfs))
