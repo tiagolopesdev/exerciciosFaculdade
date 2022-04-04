@@ -42,3 +42,9 @@ print(pd.DataFrame(dadosDicionario))
 print("\nSeleção de colunas com dados em dicionário\n")
 dfDadosDicionario = dadosDicionario['idades']
 print("Tipo de dado: ", type(dfDadosDicionario))
+
+url = "https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/"
+dfs = pd.read_html(url)
+
+print(type(dfs))
+print(len(dfs))
